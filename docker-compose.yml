@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: my-startpage-db
+    environment:
+      POSTGRES_USER: startpage
+      POSTGRES_PASSWORD: startpage
+      POSTGRES_DB: startpage
+    ports:
+      - "5432:5432"
+    volumes:
+      - startpage_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U startpage -d startpage"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  startpage_pg_data:

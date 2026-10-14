@@ -1,0 +1,78 @@
+.bookmark-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bookmark-list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.bookmark-list__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+  min-width: 0;
+}
+
+.bookmark-list__link span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookmark-list__icon {
+  flex-shrink: 0;
+}
+
+.bookmark-list__remove {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 0.25rem;
+}
+
+.bookmark-list__remove:hover {
+  color: var(--danger);
+}
+
+.bookmark-add {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border);
+}
+
+.bookmark-add input {
+  flex: 1;
+  min-width: 80px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.45rem;
+  background: transparent;
+  color: var(--text);
+}
+
+.bookmark-add button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bookmark-add button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

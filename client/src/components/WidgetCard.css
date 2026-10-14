@@ -1,0 +1,57 @@
+.widget-card {
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+}
+
+.widget-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  gap: 0.5rem;
+}
+
+.widget-card__title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.widget-card__title-input {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+}
+
+.widget-card__actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.widget-card__actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.2rem 0.35rem;
+  opacity: 0.65;
+  border-radius: 4px;
+}
+
+.widget-card__actions button:hover {
+  opacity: 1;
+  background: var(--border);
+}
+
+.widget-card__body {
+  padding: 0.5rem 0.85rem 0.85rem;
+  flex: 1;
+}

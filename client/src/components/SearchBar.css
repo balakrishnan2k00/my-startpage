@@ -1,0 +1,30 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: min(560px, 100%);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.search-bar__icon {
+  opacity: 0.6;
+}
+
+.search-bar__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text);
+  min-width: 0;
+}
+
+.search-bar__submit {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem;
+}

@@ -1,0 +1,14 @@
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .widget-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
