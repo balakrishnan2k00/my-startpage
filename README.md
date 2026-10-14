@@ -60,7 +60,7 @@ Supabase hosts the database only. Ship the Node app to a host such as [Render](h
 1. Push this repo to GitHub.
 2. **New → Blueprint** on Render and point at `render.yaml`, or create a **Web Service** with:
    - **Build:** `npm install && npm run build`
-   - **Start:** `npm run start:prod`
+   - **Start:** `npm run start -w server` (set `NODE_ENV=production` in the host env; `render.yaml` does this)
 3. Set environment variable **`DATABASE_URL`** to the same Supabase Session pooler URI (never commit it).
 4. After deploy, open `https://YOUR-SERVICE.onrender.com/api/health`.
 
